@@ -1,0 +1,12 @@
+export { default as Cart } from "./Cart";
+export { default as Facebook } from "./Facebook";
+export { default as Instagram } from "./Instagram";
+export { default as Letter } from "./Letter";
+export { default as Logo } from "./Logo";
+export { default as Mail } from "./Mail";
+export { default as MailLarge } from "./MailLarge";
+export { default as OkClose } from "./OkClose";
+export { default as Play } from "./Play";
+export { default as Rectangle } from "./Rectangle";
+export { default as Tools } from "./Tools";
+export { default as Twitter } from "./Twitter";
