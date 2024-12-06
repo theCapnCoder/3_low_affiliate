@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Raleway, Bitter } from "next/font/google";
 import "./globals.css";
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-raleway",
+  weight: ["400", "700"],
+});
+
+const bitter = Bitter({
+  subsets: ["latin"],
+  variable: "--font-bitter",
+  weight: ["400"],
+});
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} ${bitter.variable} font-raleway antialiased`}
       >
         {children}
       </body>
