@@ -9,22 +9,21 @@ export const Newsletter = () => {
         <Image src={Mail} alt="mail" />
 
         <div>
-          <div className="flex gap-4">
+          <div className="flex items-center gap-4">
             <MailLarge />
-            <div>Newsletter Signup</div>
+            <h3 className="text-3xl">Newsletter Signup</h3>
           </div>
 
-          <div>
+          <p className="text-lg leading-snug">
             Be the first to receive updates on articles, product reviews,
             courses, and more!
-          </div>
+          </p>
 
           <input type="text" placeholder="Your email" />
 
-
-          <div className="flex gap-4">
-            <div>Submit</div>
-            <div>Privacy Policy</div>
+          <div className="flex items-center gap-4">
+            <button>Submit</button>
+            <p className="text-sx">Privacy Policy</p>
           </div>
         </div>
       </div>

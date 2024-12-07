@@ -1,11 +1,7 @@
-import { Facebook, Twitter, Instagram } from "@/assets/svg";
+import { Facebook, Instagram, Twitter } from "@/assets/svg";
+import Image from "next/image";
 import Link from "next/link";
-
-const cards = [
-  { field1: "Secrets to Know About Hedge Trimming" },
-  { field1: "How to Prep Your Lawn in the Spring" },
-  { field1: "What to Do With a Dying Tree" },
-];
+import { LatestCards } from "./data";
 
 const links = [
   "About",
@@ -20,29 +16,41 @@ const footerLinks = ["Licenses", "Style Guide", "Changelog"];
 
 export const Footer = () => {
   return (
-    <footer>
+    <footer className="text-blue_dark">
       <div className="flex justify-between">
-        <div className="flex gap-4">
-          <Facebook />
-          <Twitter />
-          <Instagram />
-        </div>
-        <p>
-          <span>Affiliate</span> is a Webflow template made for entrepreneurs
-          who want a professional and polished site ready to start and grow
-          their affiliate marketing business in any niche.
-        </p>
-
         <div>
-          {cards.map((card, index) => (
-            <div key={index}>{card.field1}</div>
-          ))}
+          <div className="flex gap-4">
+            <Facebook />
+            <Twitter />
+            <Instagram />
+          </div>
+
+          <p className="max-w-[30ch] leading-tight">
+            <span className="font-bold">Affiliate</span> is a Webflow template
+            made for entrepreneurs who want a professional and polished site
+            ready to start and grow their affiliate marketing business in any
+            niche.
+          </p>
         </div>
 
         <div>
-          <div>Browse</div>
-
+          <h3 className="text-gray_ultra_dark font-bitter text-3xl">
+            Latest Articles
+          </h3>
           <div>
+            {LatestCards.map((item, index) => (
+              <div key={index} className="flex items-center gap-4">
+                <Image src={item.img} alt={item.alt} />
+                <p>{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-gray_ultra_dark font-bitter text-3xl">Browse</h3>
+
+          <div className="flex">
             <input type="text" />
             <div>Search</div>
           </div>
@@ -50,29 +58,33 @@ export const Footer = () => {
           <ul>
             {links.map((link, index) => (
               <li key={index}>
-                <Link href="#">{link}</Link>
+                <Link href="#" className="leading-tight">
+                  {link}
+                </Link>
               </li>
             ))}
           </ul>
 
-          <hr />
+          <div className="h-px bg-gray_dark"></div>
 
-          <div>©2022 Your Brand Name</div>
+          <p>©2022 Your Brand Name</p>
+        </div>
+      </div>
+
+      <div className="h-px bg-gray_dark"></div>
+
+      <div className="flex justify-between">
+        <div className="flex items-center gap-4">
+          {footerLinks.map((link, index) => (
+            <div key={index}>
+              <Link href="#" className="text-xm">
+                {link}
+              </Link>
+            </div>
+          ))}
         </div>
 
-        <hr />
-
-        <div className="flex justify-between">
-          <div>
-            {footerLinks.map((link, index) => (
-              <div key={index}>
-                <Link href="#">{link}</Link>
-              </div>
-            ))}
-          </div>
-
-          <div>Powered by Designed. by Webflow Kevin Barrett</div>
-        </div>
+        <p className="text-sm">Powered by Designed. by Webflow Kevin Barrett</p>
       </div>
     </footer>
   );
