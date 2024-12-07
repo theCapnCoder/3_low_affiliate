@@ -26,15 +26,15 @@ const links = [
 
 export const Header = () => {
   return (
-    <header className="flex items-center justify-between text-sm text-blue_dark">
-      <div className="flex items-center gap-4">
+    <header className="py-3 pr-3 flex items-center justify-between text-sm text-blue_dark">
+      <div className="flex items-center gap-8">
         <Logo />
         <h4>Pages</h4>
 
         <nav>
-          <ul className="flex items-center gap-4">
+          <ul className="flex items-center gap-6 pl-4">
             {links.map((link, index) => (
-              <div key={index} className="flex items-center gap-2">
+              <div key={index} className="flex items-center gap-1">
                 {link.svg}
                 <Link href="/">{link.text}</Link>
               </div>
@@ -43,7 +43,7 @@ export const Header = () => {
         </nav>
       </div>
 
-      <div className="flex gap-4">
+      <div className="flex gap-2 pt-3">
         <Mail />
         <div>Sign up</div>
       </div>
