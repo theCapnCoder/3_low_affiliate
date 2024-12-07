@@ -30,22 +30,25 @@ const cards = [
 
 export const Products = () => {
   return (
-    <section className="text-blue_dark">
-      <h2 className="font-bitter text-4xl">Latest Product Reviews</h2>
+    <section className="py-4 tracking-wider text-blue_dark">
+      <h2 className="mb-8 font-bitter text-4xl">Latest Product Reviews</h2>
 
-      <div className="flex gap-8">
+      <div className="mb-20 flex gap-10">
         {cards.map((card, index) => (
-          <div key={index} className="col-span-1">
-            <Image src={card.img} alt={card.alt} />
-            <h3 className="font-bitter text-3xl">{card.title}</h3>
-            <p className="leading-snug">{card.text}</p>
+          <div key={index}>
+            <Image src={card.img} alt={card.alt} className="mb-6" />
+
+            <div className="pl-6">
+              <h3 className="mb-3 font-bitter text-3xl">{card.title}</h3>
+              <p className="leading-snug tracking-tight text-[15px]">{card.text}</p>
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="flex gap-2">
+      <div className="flex gap-1">
         <Play />
-        <div>View all Product Reviews</div>
+        <p className="tracking-wide">View all Product Reviews</p>
       </div>
     </section>
   );
