@@ -1,12 +1,10 @@
 import Image from "next/image";
-import Mail from "../../../public/img/mail.jpg";
+import Mail from "../../../public/images/mail.jpg";
 import { MailLarge } from "@/assets/svg";
 import { Button } from "../_components/button";
 import { Container } from "../_components/container";
 
 export const Newsletter = () => {
-  const BaseTypo = ""
-
   return (
     <section className="py-20">
       <Container>

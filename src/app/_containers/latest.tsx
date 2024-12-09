@@ -1,8 +1,8 @@
 import { Play } from "@/assets/svg";
-import SlideLarge from "../../../public/img/slider/slide_large.jpg";
 import Image from "next/image";
-import { LatestCards } from "./data";
+import SlideLarge from "../../../public/images/slider/slide_large.jpg";
 import { Container } from "../_components/container";
+import { LatestCards } from "./data";
 
 export const Latest = () => {
   return (

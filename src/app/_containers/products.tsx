@@ -1,7 +1,7 @@
 import { Play } from "@/assets/svg";
-import Card1 from "../../../public/img/card/card_1.jpg";
-import Card2 from "../../../public/img/card/card_2.jpg";
-import Card3 from "../../../public/img/card/card_3.jpg";
+import Card1 from "../../../public/images/card/card_1.jpg";
+import Card2 from "../../../public/images/card/card_2.jpg";
+import Card3 from "../../../public/images/card/card_3.jpg";
 import Image from "next/image";
 import { Container } from "../_components/container";
 

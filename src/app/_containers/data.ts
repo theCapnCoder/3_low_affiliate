@@ -1,7 +1,7 @@
-import Slide1 from "../../../public/img/slider/slide_1.jpg";
-import Slide2 from "../../../public/img/slider/slide_2.jpg";
-import Slide3 from "../../../public/img/slider/slide_3.jpg";
-import SlideLarge from "../../../public/img/slider/slide_large.jpg";
+import Slide1 from "../../../public/images/slider/slide_1.jpg";
+import Slide2 from "../../../public/images/slider/slide_2.jpg";
+import Slide3 from "../../../public/images/slider/slide_3.jpg";
+import SlideLarge from "../../../public/images/slider/slide_large.jpg";
 
 export const LatestCards = [
   {

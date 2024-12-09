@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Board from "../../../public/img/board.png";
+import Board from "../../../public/images/board.png";
 import { Button } from "../_components/button";
 import { Container } from "../_components/container";
 
