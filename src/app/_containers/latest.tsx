@@ -19,7 +19,7 @@ export const Latest = () => {
                 src={SlideLarge}
                 alt="slide_large"
                 fill
-                objectFit="cover"
+                className="object-cover"
               />
             </div>
 

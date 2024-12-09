@@ -28,7 +28,7 @@ export const Button: React.FC<Props> = ({
         {
           "bg-green leading-snug text-white": green,
           "bg-yellow text-xs font-bold leading-relaxed": yellow,
-          "bg-blue_gray text-xs font-bold leading-relaxed": gray,
+          "bg-blue_gray rounded-l-none text-xs font-bold leading-relaxed text-white": gray,
         },
         className,
       )}
