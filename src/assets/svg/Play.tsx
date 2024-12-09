@@ -4,9 +4,10 @@ const SvgPlay = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={20}
-    height={20}
+    width="1em"
+    height="1em"
     fill="none"
+    viewBox="0 0 20 20"
     {...props}
   >
     <path fill="url(#play_svg__a)" d="M0 0h20v20H0z" />

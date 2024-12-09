@@ -4,9 +4,10 @@ const SvgOkClose = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={19}
-    height={19}
+    width="1em"
+    height="1em"
     fill="none"
+    viewBox="0 0 19 19"
     {...props}
   >
     <path fill="url(#ok_close_svg__a)" d="M0 0h19v19H0z" />

@@ -9,7 +9,7 @@ import { Products } from "./_containers/products";
 
 export default function Home() {
   return (
-    <Container>
+    <>
       <Header />
       <Main />
       <Latest />
@@ -17,6 +17,6 @@ export default function Home() {
       <Products />
       <Newsletter />
       <Footer />
-    </Container>
+    </>
   );
 }

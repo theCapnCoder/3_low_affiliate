@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "svgr": "svgr --no-runtime-config --typescript --out-dir src/assets/svg -- public/svg"
+    "svgr": "svgr --no-runtime-config --typescript --icon --out-dir src/assets/svg -- public/svg"
   },
   "dependencies": {
     "next": "15.0.4",

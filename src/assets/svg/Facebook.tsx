@@ -4,9 +4,10 @@ const SvgFacebook = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
-    width={40}
-    height={40}
+    width="1em"
+    height="1em"
     fill="none"
+    viewBox="0 0 40 40"
     {...props}
   >
     <path fill="url(#facebook_svg__a)" d="M0 0h40v40H0z" />
